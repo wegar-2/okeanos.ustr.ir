@@ -1,0 +1,26 @@
+Package: ustr.yc.interface
+Type: Package
+Title: Retrieve yields curves published by US Treasury (https://home.treasury.gov/)
+Version: 0.1.0
+Author: Artur Wegrzyn
+Maintainer: Artur Wegrzyn <awegrzyn17@gmail.com>
+Description: This package contains set of functions for retrieving the yield 
+    curves from the US Treasury website's Interest Rate statistics at
+    https://home.treasury.gov/policy-issues/financing-the-government/interest-rate-statistics 
+    Please note that only the nominal rates available in the 
+    service indicated above are handled, i.e. "Daily Treasury Yield Curve Rates", 
+    "Daily Treasury Bill Rates" and "Daily Treasury Long-Term Rates".
+    Importantly, this package has data.table as one of its dependencies.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports:
+    data.table,
+    xml2,
+    dplyr,
+    magrittr,
+    methods,
+    lubridate
+Suggests: 
+    testthat
+RoxygenNote: 7.1.0
